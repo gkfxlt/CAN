@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: gui kai, SJTU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\gk\Desktop\Zero-Mode\one-DOF zero mode\temp\MDK-ARM\temp.uvprojx
+Project File Date:  11/29/2016
+
+<h2>Output:</h2>
+Build target 'temp'
+compiling stm32f7xx_it.c...
+../Drivers/CMSIS/Include/core_cm7.h(127): warning:  #47-D: incompatible redefinition of macro "__FPU_USED"
+        #define __FPU_USED       1U
+../Drivers/CMSIS/Include/core_cm4.h(79): warning:  #47-D: incompatible redefinition of macro "__CORTEX_M" (declared at line 79 of "../Drivers/CMSIS/Include/core_cm7.h")
+  #define __CORTEX_M                (0x04U)                                      /*!< Cortex-M Core */
+../Src/stm32f7xx_it.c(392): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                         filterdADCvalue[i][0]=absFun(filterdADCvalue[i][0])/4096*3.3;
+../Src/stm32f7xx_it.c(398): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                         filterdADCvalue[i][0]=(filterdADCvalue[i][0]/4096*3.3*2-2.5)*24.39;
+../Src/stm32f7xx_it.c(408): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                         filterdADCvalue[i][1]=absFun(filterdADCvalue[i][1])/4096*3.3;
+../Src/stm32f7xx_it.c(414): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                         filterdADCvalue[i][1]=(filterdADCvalue[i][1]/4096*3.3*2-2.5)*24.39-offSet[i];
+../Src/stm32f7xx_it.c(426): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                         rawADCvalue[i][2]=absFun(rawADCvalue[i][2])/4096*3.3;
+../Src/stm32f7xx_it.c(431): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                         filterdADCvalue[i][2]=(filterdADCvalue[i][2]/4096*3.3*2-2.5)*24.39-offSet[i];
+../Src/stm32f7xx_it.c(446): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                           rawADCvalue[i][2]=absFun(rawADCvalue[i][2])/4096*3.3;
+../Src/stm32f7xx_it.c(458): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                           rawADCvalue[i][2]=(rawADCvalue[i][2]/4096*3.3*2-2.5)*24.39-offSet[i];
+../Src/stm32f7xx_it.c(476): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    errTor=filterdADCvalue[6][2]+0.38*arm_sin_f32(sensorKneePositiont2);
+../Src/stm32f7xx_it.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=18820 RO-data=2556 RW-data=888 ZI-data=2848  
+"temp\temp.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.7.0.pack
+                Keil::Device:Startup:1.1.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.1.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\gk\Desktop\Zero-Mode\one-DOF zero mode\temp\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.7.0
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.1.0
+      Source file:   MDK\Device\Source\ARM\STM32F7xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F7xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\arm\startup_stm32f746xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\system_stm32f7xx.c
+</pre>
+</body>
+</html>

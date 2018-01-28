@@ -1,0 +1,32 @@
+--cpu Cortex-M7.fp.sp --fpu=FPv4-SP
+"temp\stm32f7xx_hal_uart.o"
+"temp\stm32f7xx_hal_dma_ex.o"
+"temp\stm32f7xx_hal_cortex.o"
+"temp\stm32f7xx_hal_flash_ex.o"
+"temp\stm32f7xx_hal_tim_ex.o"
+"temp\stm32f7xx_hal_tim.o"
+"temp\stm32f7xx_hal_gpio.o"
+"temp\stm32f7xx_hal_dma.o"
+"temp\stm32f7xx_hal.o"
+"temp\stm32f7xx_hal_pwr_ex.o"
+"temp\stm32f7xx_hal_rcc.o"
+"temp\stm32f7xx_hal_pwr.o"
+"temp\stm32f7xx_hal_rcc_ex.o"
+"temp\stm32f7xx_hal_flash.o"
+"temp\stm32f7xx_hal_can.o"
+"temp\stm32f7xx_hal_adc_ex.o"
+"temp\stm32f7xx_hal_adc.o"
+"temp\cpg.o"
+"temp\stm32f7xx_it.o"
+"temp\main.o"
+"temp\stm32f7xx_hal_msp.o"
+"temp\arm_sin_f32.o"
+"temp\arm_common_tables.o"
+"temp\arm_cos_f32.o"
+"temp\startup_stm32f746xx_1.o"
+"temp\system_stm32f7xx_1.o"
+--library_type=microlib --strict --scatter "temp\temp.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "temp.map" -o temp\temp.axf

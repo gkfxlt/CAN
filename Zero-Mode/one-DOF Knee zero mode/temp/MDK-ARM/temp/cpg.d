@@ -1,0 +1,11 @@
+temp\cpg.o: CPG.c
+temp\cpg.o: CPG.h
+temp\cpg.o: ../Drivers/CMSIS/Include/arm_math.h
+temp\cpg.o: ../Drivers/CMSIS/Include/core_cm4.h
+temp\cpg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+temp\cpg.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+temp\cpg.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+temp\cpg.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+temp\cpg.o: ../Drivers/CMSIS/Include/core_cmSimd.h
+temp\cpg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+temp\cpg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
